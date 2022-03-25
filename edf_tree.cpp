@@ -11,7 +11,7 @@ using namespace std;
 typedef vector<pair<int, int>> vec;
 typedef pair<int, int> p;
 
-class 
+class edf_tree
 {
     public:
   class node
@@ -68,7 +68,7 @@ class
       
   }
   public:
-  supertree(const vec& arr, const vector<int>& sort_by_x)
+  edf_tree(const vec& arr, const vector<int>& sort_by_x)
   {
       vec tmp=arr;
       sort(tmp.begin(), tmp.end(), [](const p& p1, const p& p2)
